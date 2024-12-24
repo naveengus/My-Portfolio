@@ -9,14 +9,16 @@ import Contacts from "./Contacts";
 function Home() {
   return (
     <>
-      <div className="container vh-100 d-flex justify-content-center align-items-center mt-2 home-box">
+      <div className="container vh-100 d-flex  justify-content-center align-items-center home-box">
         <div className="row text-center text-md-start ">
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
             <div className="ms-md-5">
-              <h1>Hi , I'm Naveen.G</h1>
+              <h1>
+                Hi ,<span className="h1">I'm Naveen.G</span>{" "}
+              </h1>
               <br />
-              <h4 className="fsd">Full-Stack Developer</h4>
-              <p>
+              <h4 className="fsd uniquifier">Full-Stack Developer</h4>
+              <p className="paraghraph">
                 A dedicated MERN Stack Developer with expertise in creating
                 intuitive and responsive web applications, blending technical
                 skills with creative problem-solving.

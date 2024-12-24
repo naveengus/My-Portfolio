@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
   margin: 0%;
   padding: 0%;
@@ -14,7 +17,7 @@
   /* background-color: aqua; */
 }
 .custum-navbar .navbar-brand {
-  color: rgb(247, 23, 7) !important;
+  color: rgb(247, 243, 243) !important;
   padding-left: 10px;
 }
 .navbar-toggler {
@@ -130,6 +133,31 @@
 html {
   scroll-behavior: smooth;
 }
+
+.uniquifier {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.paraghraph {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+*/ h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Bold for headings */
+}
+
+/* p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; 
+  line-height: 1.6;
+} 
+*/
+
 @media only screen and (max-width: 500px) {
   .custom-offcanvas-size {
     width: 200px !important;

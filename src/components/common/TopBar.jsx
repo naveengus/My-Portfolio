@@ -16,7 +16,9 @@ function OffcanvasExample() {
           className=" custum-navbar mb-3 mt-2"
         >
           <Container fluid>
-            <Navbar.Brand href="#">My-PortFolio</Navbar.Brand>
+            <Navbar.Brand href="#" className="uniquifier">
+              My-PortFolio
+            </Navbar.Brand>
             <Navbar className="d-none d-md-block ">
               <Container>
                 <Nav className="nav-item ">
@@ -24,7 +26,7 @@ function OffcanvasExample() {
                   <Nav.Link href="/About">About</Nav.Link>
                   <Nav.Link href="/Projects">Projects</Nav.Link>
                   <Nav.Link href="/Projects">Education</Nav.Link>
-                  <Nav.Link href="/Contacts">Cantacts</Nav.Link>
+                  <Nav.Link href="/Contacts">Contacts</Nav.Link>
                 </Nav>
               </Container>
             </Navbar>
@@ -53,7 +55,7 @@ function OffcanvasExample() {
                   <Nav.Link href="/Projects">Experience</Nav.Link>
                   <Nav.Link href="/Projects">Certificates</Nav.Link>
                   <Nav.Link href="/Projects">Education</Nav.Link>
-                  <Nav.Link href="/Contacts">Cantacts</Nav.Link>
+                  <Nav.Link href="/Contacts">Contacts</Nav.Link>
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
