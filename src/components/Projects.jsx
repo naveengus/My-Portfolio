@@ -43,11 +43,13 @@ function Projects() {
             <p className="prodes">
               {project.description}
               <br />
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <IoLogoGithub
-                  className="icon icon:hover-blue mt-3 "
-                  size={40}
-                />
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer "
+                className="proicon"
+              >
+                <IoLogoGithub className="icon  mt-3 " size={40} />
               </a>
             </p>
           </div>

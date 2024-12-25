@@ -13,12 +13,19 @@
 }
 
 .custum-navbar .nav-link {
-  color: aliceblue !important;
+  color: rgb(255, 255, 255) !important;
   /* background-color: aqua; */
 }
 .custum-navbar .navbar-brand {
-  color: rgb(247, 243, 243) !important;
-  padding-left: 10px;
+  color: rgba(239, 238, 245) !important;
+  text-shadow: 2px 2px 4px #ff0000;
+  padding: 10px;
+  margin-left: 10px;
+  /* background-color: rgb(46, 62, 77); */
+  /* border: 5px solid white; */
+  border-radius: 70%;
+  /* border-style: outset; */
+  border-bottom: 3px solid rgba(241, 241, 245, 0.3);
 }
 .navbar-toggler {
   /* background-color: white !important; */
@@ -43,6 +50,32 @@
   margin-left: 70px;
   margin-top: 20px;
 }
+.sideprofile {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background-color: rgb(211, 208, 208, 0.7);
+}
+.offNav .nav-link {
+  padding: 20px;
+  border-radius: 15px;
+}
+.officon {
+  margin-right: 15px;
+}
+.offNav .nav-link:hover {
+  background-color: rgb(135, 136, 138, 0.1);
+}
+.intro {
+  margin-bottom: -20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(245, 245, 245, 0.6);
+}
+.name {
+  margin-bottom: -10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .home-h1 {
   margin-right: 20px;
 }
@@ -57,14 +90,7 @@
   /* height: 800px; */
 }
 .icon-link .icon {
-  background: rgb(105, 98, 98, 0.5);
-  background: linear-gradient(
-    180deg,
-    rgba(105, 98, 98, 0.6) 19%,
-    rgba(69, 85, 88, 0.7) 53%,
-    rgba(26, 30, 79, 0.9) 97%
-  );
-  /* border-radius: 50%; */
+  border-radius: 50%;
   transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
@@ -96,6 +122,15 @@
   align-items: center;
   margin-bottom: 30px;
 }
+.proicon {
+  background: rgb(105, 98, 98, 0.5);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 98, 98, 0.6) 19%,
+    rgba(69, 85, 88, 0.7) 53%
+  );
+  border-radius: 50%;
+}
 .prodes p {
   background: rgb(105, 98, 98, 0.5);
   background: linear-gradient(
@@ -107,11 +142,11 @@
 }
 .prodes {
   position: absolute;
-  left: 43px;
+  left: 40px;
   right: 0;
   bottom: 0;
   top: 0;
-  width: 300px;
+  width: 295px;
   height: 200px;
   padding-top: 60px !important;
   padding: 20px;
@@ -160,7 +195,7 @@ html {
 
 @media only screen and (max-width: 500px) {
   .custom-offcanvas-size {
-    width: 200px !important;
+    width: 230px !important;
     background-color: black;
     color: aliceblue;
   }

@@ -13,8 +13,9 @@ function Home() {
         <div className="row text-center text-md-start ">
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
             <div className="ms-md-5">
-              <h1>
-                Hi ,<span className="h1">I'm Naveen.G</span>{" "}
+              <p className="intro ">Hi ,I'm </p> <br />
+              <h1 className="name">
+                <span className="h1">Naveen.G</span>{" "}
               </h1>
               <br />
               <h4 className="fsd uniquifier">Full-Stack Developer</h4>
@@ -25,7 +26,7 @@ function Home() {
               </p>
               <div className="home-icons">
                 <a href="#" className="p-2 icon-link">
-                  <IoLogoGithub className="icon icon:hover-blue" size={25} />
+                  <IoLogoGithub className="icon " size={25} />
                 </a>
                 <a href="#" className="p-2 icon-link">
                   <IoLogoLinkedin className="icon" size={25} />
