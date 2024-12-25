@@ -3,7 +3,8 @@ import Home from "../components/Home";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Contacts from "../components/Contacts";
-
+import Education from "../components/Education";
+import Certificates from "../components/Certificate";
 export default [
   {
     path: "/Home",
@@ -29,6 +30,24 @@ export default [
       <>
         <TopBar />
         <Projects />
+      </>
+    ),
+  },
+  {
+    path: "/Education",
+    element: (
+      <>
+        <TopBar />
+        <Education />
+      </>
+    ),
+  },
+  {
+    path: "/Certificates",
+    element: (
+      <>
+        <TopBar />
+        <Certificates />
       </>
     ),
   },

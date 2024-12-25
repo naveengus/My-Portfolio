@@ -34,7 +34,7 @@ function OffcanvasExample() {
                   <Nav.Link href="/Home">Home</Nav.Link>
                   <Nav.Link href="/About">About</Nav.Link>
                   <Nav.Link href="/Projects">Projects</Nav.Link>
-                  <Nav.Link href="/Projects">Education</Nav.Link>
+                  <Nav.Link href="/Education">Education</Nav.Link>
                   <Nav.Link href="/Contacts">Contacts</Nav.Link>
                 </Nav>
               </Container>
@@ -80,11 +80,11 @@ function OffcanvasExample() {
                     <LuBicepsFlexed className="officon" />
                     Experience
                   </Nav.Link>
-                  <Nav.Link href="/Projects">
+                  <Nav.Link href="/Certificates">
                     <GrCertificate className="officon" />
                     Certificates
                   </Nav.Link>
-                  <Nav.Link href="/Projects">
+                  <Nav.Link href="/Education">
                     <LuBookOpenText className="officon" />
                     Education
                   </Nav.Link>

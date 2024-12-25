@@ -27,7 +27,7 @@ function Projects() {
 
   return (
     <div className="container proBox">
-      <h1 className="text-center mb-4">My Projects</h1>
+      <h1 className="text-center mb-4">Projects</h1>
       <div className="row">
         {projects.map((project) => (
           <div
@@ -49,7 +49,7 @@ function Projects() {
                 rel="noopener noreferrer "
                 className="proicon"
               >
-                <IoLogoGithub className="icon  mt-3 " size={40} />
+                <IoLogoGithub className="icon  mt-3 bg-dark" size={40} />
               </a>
             </p>
           </div>

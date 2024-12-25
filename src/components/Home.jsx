@@ -1,10 +1,13 @@
 import React from "react";
 import mypic1 from "../assets/mypic1.png";
+import Button from "react-bootstrap/esm/Button";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import About from "./About";
 import Projects from "./Projects";
+import Education from "./Education";
+import Certificates from "./Certificate";
 import Contacts from "./Contacts";
 function Home() {
   return (
@@ -13,7 +16,7 @@ function Home() {
         <div className="row text-center text-md-start ">
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
             <div className="ms-md-5">
-              <p className="intro ">Hi ,I'm </p> <br />
+              <p className="intro ">Hi ,I am </p> <br />
               <h1 className="name">
                 <span className="h1">Naveen.G</span>{" "}
               </h1>
@@ -37,6 +40,9 @@ function Home() {
                 <a href="#" className="p-2 icon-link">
                   <MdOutgoingMail className="icon" size={30} />
                 </a>
+                <br />
+                <Button className="bg-primary mt-3  me-3 ms-2">Resume</Button>
+                <Button className="bg-primary mt-3 me-3">Hire ME</Button>
               </div>
             </div>
           </div>
@@ -52,6 +58,8 @@ function Home() {
       </div>
       <About />
       <Projects />
+      <Education />
+      <Certificates />
       <Contacts />
     </>
   );
