@@ -15,7 +15,12 @@ import {
   MdOutlineMedicalInformation,
   MdOutlineDeveloperMode,
 } from "react-icons/md";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 function OffcanvasExample() {
+  const handleClose = () => {
+    document.querySelector(".btn-close").click();
+  };
+
   return (
     <>
       {[false].map((expand) => (
@@ -31,11 +36,37 @@ function OffcanvasExample() {
             <Navbar className="d-none d-md-block ">
               <Container>
                 <Nav className="nav-item ">
-                  <Nav.Link href="/Home">Home</Nav.Link>
-                  <Nav.Link href="/About">About</Nav.Link>
-                  <Nav.Link href="/Projects">Projects</Nav.Link>
-                  <Nav.Link href="/Education">Education</Nav.Link>
-                  <Nav.Link href="/Contacts">Contacts</Nav.Link>
+                  <AnchorLink className="anchor-link" href="#Home">
+                    Home
+                  </AnchorLink>
+                  <AnchorLink className="anchor-link" offset={50} href="#About">
+                    About
+                  </AnchorLink>
+                  <AnchorLink
+                    className="anchor-link"
+                    offset={50}
+                    href="#Projects"
+                  >
+                    Projects
+                  </AnchorLink>
+                  <AnchorLink
+                    className="anchor-link"
+                    offset={50}
+                    href="#Education"
+                  >
+                    Education
+                  </AnchorLink>
+                  <AnchorLink
+                    className="anchor-link"
+                    offset={50}
+                    href="#Contacts"
+                  >
+                    Contacts
+                  </AnchorLink>
+                  {/* <Nav.Link href="/About">About</Nav.Link> */}
+                  {/* <Nav.Link href="/Projects">Projects</Nav.Link> */}
+                  {/* <Nav.Link href="/Education">Education</Nav.Link> */}
+                  {/* <Nav.Link href="/Contacts">Contacts</Nav.Link> */}
                 </Nav>
               </Container>
             </Navbar>
@@ -64,34 +95,37 @@ function OffcanvasExample() {
 
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-2 pe-3 offNav">
-                  <Nav.Link href="/Home">
-                    <IoHomeOutline className="officon" />
-                    Home
-                  </Nav.Link>
-                  <Nav.Link href="/About">
-                    <MdOutlineMedicalInformation className="officon" />
-                    About
-                  </Nav.Link>
-                  <Nav.Link href="/Projects">
-                    <MdOutlineDeveloperMode className="officon" />
-                    Projects
-                  </Nav.Link>
-                  <Nav.Link href="/Projects">
-                    <LuBicepsFlexed className="officon" />
-                    Experience
-                  </Nav.Link>
-                  <Nav.Link href="/Certificates">
-                    <GrCertificate className="officon" />
-                    Certificates
-                  </Nav.Link>
-                  <Nav.Link href="/Education">
-                    <LuBookOpenText className="officon" />
-                    Education
-                  </Nav.Link>
-                  <Nav.Link href="/Contacts">
-                    <FaPhoneSquareAlt className="officon" />
-                    Contacts
-                  </Nav.Link>
+                  <Nav className="justify-content-end flex-grow-2 pe-3 offNav">
+                    <Nav.Link href="/Home">
+                      <IoHomeOutline className="officon" />
+                      Home
+                    </Nav.Link>
+                    <Nav.Link href="/About">
+                      <MdOutlineMedicalInformation className="officon" />
+                      About
+                    </Nav.Link>
+                    <Nav.Link href="/Projects">
+                      <MdOutlineDeveloperMode className="officon" />
+                      Projects
+                    </Nav.Link>
+                    <Nav.Link href="/Projects">
+                      <LuBicepsFlexed className="officon" />
+                      Experience
+                    </Nav.Link>
+                    <Nav.Link href="/Certificates">
+                      <GrCertificate className="officon" />
+                      Certificates
+                    </Nav.Link>
+                    <Nav.Link href="/Education">
+                      <LuBookOpenText className="officon" />
+                      Education
+                    </Nav.Link>
+                    <Nav.Link href="/Contacts">
+                      <FaPhoneSquareAlt className="officon" />
+                      Contacts
+                    </Nav.Link>
+                  </Nav>
+
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}

@@ -2,7 +2,7 @@ import React from "react";
 
 function Education() {
   return (
-    <div className="container bg-dark text-center p-3">
+    <div className="container bg-dark text-center p-3" id="Education">
       <h1 className="bg-dark  py-3">Education</h1>
       <div className="bg-dark ">
         <h3 className="bg-dark">Full Stack Development -Guvi</h3>

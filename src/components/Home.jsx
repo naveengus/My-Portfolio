@@ -9,10 +9,14 @@ import Projects from "./Projects";
 import Education from "./Education";
 import Certificates from "./Certificate";
 import Contacts from "./Contacts";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 function Home() {
   return (
     <>
-      <div className="container vh-100 d-flex  justify-content-center align-items-center home-box">
+      <div
+        id="Home"
+        className="container vh-100 d-flex  justify-content-center align-items-center home-box"
+      >
         <div className="row text-center text-md-start ">
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
             <div className="ms-md-5">
@@ -22,7 +26,8 @@ function Home() {
               </h1>
               <br />
               <h4 className="fsd uniquifier">Full-Stack Developer</h4>
-              <p className="paraghraph">
+              {/* <p className="paraghraph "> */}
+              <p className=" ">
                 A dedicated MERN Stack Developer with expertise in creating
                 intuitive and responsive web applications, blending technical
                 skills with creative problem-solving.
@@ -42,7 +47,9 @@ function Home() {
                 </a>
                 <br />
                 <Button className="bg-primary mt-3  me-3 ms-2">Resume</Button>
-                <Button className="bg-primary mt-3 me-3">Hire ME</Button>
+                <AnchorLink href="#Contacts">
+                  <Button className="bg-primary mt-3 me-3">Hire ME</Button>
+                </AnchorLink>
               </div>
             </div>
           </div>

@@ -23,7 +23,7 @@ function Certificate() {
   ];
   return (
     <div>
-      <div className="container   mb-3">
+      <div id="About" className="container   mb-3">
         <div className="row   align-items-center">
           <h1 className="text-center mt-3  p-3 "> Certificates</h1>
           {Certificates.map((Certificate) => (
