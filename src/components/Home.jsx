@@ -15,11 +15,11 @@ function Home() {
     <>
       <div
         id="Home"
-        className="container vh-100 d-flex  justify-content-center align-items-center home-box"
+        className="container vh-md-100 d-flex  justify-content-center align-items-center home-box m-md-5"
       >
         <div className="row text-center text-md-start ">
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
-            <div className="ms-md-5">
+            <div className="ms-md-5 mt-3 ">
               <p className="intro ">Hi ,I am </p> <br />
               <h1 className="name">
                 <span className="h1">Naveen.G</span>{" "}
@@ -33,22 +33,28 @@ function Home() {
                 skills with creative problem-solving.
               </p>
               <div className="home-icons">
-                <a href="#" className="p-2 icon-link">
+                <a
+                  href="https://github.com/naveengus"
+                  className="p-2 icon-link"
+                >
                   <IoLogoGithub className="icon " size={25} />
                 </a>
-                <a href="#" className="p-2 icon-link">
+                <a
+                  href="https://www.linkedin.com/in/naveen-g-devloper"
+                  className="p-2 icon-link"
+                >
                   <IoLogoLinkedin className="icon" size={25} />
                 </a>
-                <a href="#" className="p-2 icon-link">
+                {/* <a href="#" className="p-2 icon-link">
                   <FaPhoneSquareAlt className="icon" size={25} />
                 </a>
                 <a href="#" className="p-2 icon-link">
                   <MdOutgoingMail className="icon" size={30} />
-                </a>
+                </a> */}
                 <br />
-                <Button className="bg-primary mt-3  me-3 ms-2">Resume</Button>
+                <button className="resume-btn mt-3  me-3 ms-2">Resume</button>
                 <AnchorLink href="#Contacts">
-                  <Button className="bg-primary mt-3 me-3">Hire ME</Button>
+                  <button className="hire-btn mt-3 me-3">Hire ME</button>
                 </AnchorLink>
               </div>
             </div>

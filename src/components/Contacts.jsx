@@ -33,10 +33,10 @@ function Contacts() {
 
   return (
     <div>
-      <div id="Contacts" className="container vh-100 bg-dark mb-3">
-        <div className="row bg-dark con-box ">
-          <h1 className="text-center mt-2 mb-4 bg-dark p-3 ">Contact Me</h1>
-          <div className=" col-12 col-md-6  bg-dark">
+      <div id="Contacts" className="container   mb-3">
+        <div className="row  con-box ">
+          <h1 className="text-center mt-2 mb-4  p-3 ">Contact Me</h1>
+          <div className=" col-12 col-md-6  ">
             <Form onSubmit={onSubmit} className="con-form">
               <Form.Group className="mb-3">
                 <Form.Label>Your Name</Form.Label>
@@ -72,28 +72,33 @@ function Contacts() {
               </Button>
             </Form>
           </div>
-          <div className="col-12 col-md-6 bg-dark ">
-            <div className="align-items-center con-right bg-dark">
-              <p className=" bg-dark text-center p-2 con-email">
-                <span className=" bg-dark text-center p-2 ">
-                  <MdOutgoingMail className="m-2 bg-dark" />
+          <div className="col-12 col-md-6  ">
+            <div className="align-items-center con-right ">
+              <p className="  text-center p-2 con-email">
+                <span className="  text-center p-2 ">
+                  <MdOutgoingMail className="m-2 " />
                   Email :
                 </span>
-                <span className="bg-dark text-primary">
-                  naveen.g13579@gmail.com
-                </span>
+                <span className=" text-primary">naveen.g13579@gmail.com</span>
               </p>
-              <p className=" bg-dark text-center con-email">
-                <span className=" bg-dark text-center p-2 ">
-                  <FaPhoneSquareAlt className="m-2 bg-dark" />
+              <p className="  text-center con-email">
+                <span className="  text-center p-2 ">
+                  <FaPhoneSquareAlt className="m-2 " />
                   Phone :
                 </span>
-                <span className="bg-dark text-primary">95244 69130</span>
+                <span className=" text-primary">95244 69130</span>
               </p>
             </div>
-            <div className=" text-center p-2 pb-4 bg-dark">
-              <IoLogoGithub className="m-2 bg-dark" size={20} />
-              <IoLogoLinkedin className="m-2 bg-dark" size={20} />
+            <div className=" text-center p-2 pb-4 ">
+              <a href="https://github.com/naveengus" className="p-2 icon-link ">
+                <IoLogoGithub className="m-2 " size={20} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/naveen-g-devloper"
+                className="p-2 icon-link "
+              >
+                <IoLogoLinkedin className="m-2 " size={20} />
+              </a>
             </div>
           </div>
         </div>
