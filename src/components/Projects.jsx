@@ -49,9 +49,12 @@ function Projects() {
         <MdOutlineDeveloperMode />
         Projects
       </h1>
-      <div className="row">
+      <div className="row ">
         {projects.map((project) => (
-          <div key={project.id} className="col-6 col-md-4  position-relative ">
+          <div
+            key={project.id}
+            className="col-6 col-sm-6 col-md-4 position-relative "
+          >
             <div className="project-card">
               <img
                 className="proimg text-center"
@@ -75,15 +78,15 @@ function Projects() {
                     className="pro-icon text-decoration-none"
                   >
                     Code
-                    <IoLogoGithub className="icon  bg-dark" size={25} />
+                    <IoLogoGithub className="pro-git " />
                   </a>
                   <a
                     href={project.visit}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="pro-icon text-decoration-none"
+                    className="pro-icon text-decoration-none "
                   >
-                    Visit <FaChrome className="icon  bg-dark" size={25} />
+                    Visit <FaChrome className="pro-chrome " />
                   </a>
                 </div>
                 {/* <div> </div> */}

@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0px;
+  padding: 0px;
   /* background-color: rgb(9, 23, 39); */
   /* background-color: rgb(0, 0, 0); */
   /* color: white; */
@@ -28,7 +28,7 @@
   animation: shake 2s infinite;
 }
 .contactmemd {
-  margin-left: 50px;
+  margin-left: 30px;
   padding: 5px 10px;
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.26%, #b923e1 92.06%);
@@ -57,6 +57,13 @@
   border-radius: 50px;
   font-size: 40px;
   padding: 5px;
+  color: rgb(253, 248, 248);
+}
+.whatsappmd {
+  background-color: chartreuse;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 3px;
   color: rgb(253, 248, 248);
 }
 .custum-navbar {
@@ -126,6 +133,10 @@
 .offNav .nav-link:hover {
   background-color: rgb(135, 136, 138, 0.1);
 }
+.intro-box {
+  animation: movedown 2s linear forwards;
+  opacity: 0;
+}
 .intro {
   margin-bottom: -20px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -192,6 +203,8 @@
     background-color: rgba(136, 141, 141, 0.2); */
   border-radius: 50%;
   height: auto;
+  animation: movedown 2s linear forwards;
+  opacity: 0;
 }
 .proBox {
   padding: 20px;
@@ -204,8 +217,13 @@
   padding: 20px;
   margin-top: 20px;
 }
+
 .project-card:hover {
-  background-color: rgba(85, 100, 226, 0.5);
+  transform: scale(1.1);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  /* background-color: rgba(85, 100, 226, 0.5); */
+  transition: 0.5s;
 }
 .proimg {
   width: 300px;
@@ -216,12 +234,12 @@
   /* animation: shake 2s; */
 
   /* background: rgb(105, 98, 98, 0.5); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(105, 98, 98, 0.6) 19%,
     rgba(69, 85, 88, 0.7) 53%
   );
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 .prodes p {
   background: rgb(105, 98, 98, 0.5);
@@ -258,8 +276,8 @@
   opacity: 1;
 }
 .pro-icon {
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center;
+  text-align: center; */
   padding: 10px 16px;
   margin: 10px;
   border-radius: 50px;
@@ -289,6 +307,69 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700; /* Bold for headings */
 }
+.Certificate {
+  padding: 20px;
+}
+
+.education-details {
+  position: relative;
+  padding: 20px;
+  max-width: 1200px;
+  margin-top: -30px;
+  margin: 100px auto;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.education-details .container:nth-child(1) {
+  animation-delay: 0s;
+}
+.education-details .container:nth-child(2) {
+  animation-delay: 1s;
+}
+.education-details .container:nth-child(3) {
+  animation-delay: 2s;
+}
+.education-details .container {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  /* border: 2px solid wheat; */
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+.text-box {
+  position: relative;
+}
+.education-details::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(267deg, #da7c25 0.26%, #b923e1 92.06%);
+  top: 0;
+  margin-right: -3px;
+  z-index: -1;
+  animation: moveline 5s linear forwards;
+}
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
 .con-form {
   padding: 30px;
   border: 2px solid rgb(133, 131, 131);
@@ -318,7 +399,7 @@ h1 {
     color: aliceblue;
   }
   .proimg {
-    width: 115px;
+    width: 120px;
     height: 100px;
     align-items: center;
   }
@@ -331,10 +412,39 @@ h1 {
     margin-top: 15px;
     font-size: xx-small;
   }
-  .project-card .proicon .icon {
-    background-color: #ff0000;
+  .pro-icon {
+    /* justify-content: center;
+  text-align: center; */
+    padding: 4px 10px;
+    margin: 3px;
+    border-radius: 50px;
+    border: 2px solid wheat;
+    /* background: linear-gradient(267deg, #da7c25 0.26%, #b923e1 92.06%); */
+    font-size: xx-small;
   }
+
   .con-email {
     font-size: small;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .proimg {
+    width: 180px;
+    height: 100px;
+    align-items: center;
+  }
+  .pro-icon {
+    padding: 4px 10px;
+    margin: 3px;
+    border-radius: 50px;
+    border: 2px solid wheat;
+    font-size: small;
+  }
+  .contactme {
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 16px;
   }
 }

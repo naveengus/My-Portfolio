@@ -78,7 +78,7 @@ function OffcanvasExample() {
               rel="noopener noreferrer"
             >
               Contact Me
-              {/* <FaWhatsapp className="whatsapp" /> */}
+              <FaWhatsapp className="whatsappmd" />
             </a>
             {/* <button className="contactmemd">Contact Me</button> */}
 

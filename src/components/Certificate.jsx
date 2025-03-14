@@ -29,7 +29,7 @@ function Certificate() {
           {Certificates.map((Certificate) => (
             <div
               key={Certificate.id}
-              className="col-4 col-md-4 text-center position-relative"
+              className="col-4 col-md-4 text-center position-relative Certificate"
             >
               <img
                 className="proimg w-100 h-100 "

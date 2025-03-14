@@ -18,7 +18,7 @@ function Home() {
         className="container vh-md-100 d-flex  justify-content-center align-items-center home-box m-md-5"
       >
         <div className="row text-center text-md-start ">
-          <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
+          <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0 intro-box">
             <div className="ms-md-5 mt-3 ">
               <p className="intro ">Hi ,I am </p> <br />
               <h1 className="name">
