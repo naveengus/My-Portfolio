@@ -33,7 +33,19 @@ function Education() {
           <div className="text-box">
             <ul>
               <li>
-                <h3>High Schooling</h3>
+                <h3>H.S.C</h3>
+                <strong>54 % </strong>
+                <p>Govt Boys HR Sec School | Salem</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="container">
+          <div className="text-box">
+            <ul>
+              <li>
+                <h3>H.S.L.C</h3>
+                <strong>74 % </strong>
                 <p>Govt Boys HR Sec School | Salem</p>
               </li>
             </ul>

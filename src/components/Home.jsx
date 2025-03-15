@@ -1,5 +1,6 @@
 import React from "react";
 import mypic1 from "../assets/mypic1.png";
+import profile from "../assets/profile2.png";
 import Button from "react-bootstrap/esm/Button";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { FaPhoneSquareAlt } from "react-icons/fa";
@@ -61,8 +62,9 @@ function Home() {
           </div>
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
             <img
-              className="home-img img-fluid ms-md-5"
-              src={mypic1}
+              className="home-img img-fluid ms-md-5 "
+              // src={mypic1}
+              src={profile}
               // style={{ maxWidth: "150%", height: "auto" }}
               alt="Naveen's Picture"
             />

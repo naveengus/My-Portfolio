@@ -8,8 +8,8 @@ function About() {
     <div>
       <div className="container   " id="About">
         <div className="col   align-items-center">
-          <h1 className="text-center mb-1  pt-5 ">
-            <MdOutlineMedicalInformation />
+          <h1 className="text-center  mt-2 pt-3 ">
+            <MdOutlineMedicalInformation className="m-2" />
             About Me
           </h1>
           <div className=" p-5">

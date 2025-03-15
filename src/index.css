@@ -76,11 +76,6 @@
   background-color: rgb(16, 32, 51);
   color: white;
 }
-
-/* .custum-navbar .nav-link {
-  /* color: rgb(255, 255, 255) !important; */
-/* background-color: aqua; */
-/* }  */
 .custum-navbar .navbar-brand {
   color: rgba(239, 238, 245) !important;
   text-shadow: 2px 2px 4px #ff0000;
@@ -88,10 +83,6 @@
   margin-left: 10px;
   border-radius: 70%;
   border-bottom: 3px solid rgba(241, 241, 245, 0.3);
-}
-.navbar-toggler {
-  /* background-color: white !important; */
-  /* border: none; Removes the border */
 }
 .offcanvas-body {
   background-color: rgb(16, 32, 51);
@@ -107,7 +98,7 @@
 }
 
 .custom-offcanvas-size .btn-close:focus {
-  box-shadow: none; /* Optional: removes focus outline */
+  box-shadow: none;
 }
 .nav-item {
   margin-left: -100px;
@@ -155,17 +146,15 @@
 }
 .home-box .row > div {
   padding: 0 70px;
-  /* height: 800px; */
 }
 .icon-link .icon {
   border-radius: 50%;
-  transition: color 0.3s ease; /* Smooth transition for hover */
+  transition: color 0.3s ease;
 }
 
 .icon:hover {
   color: rgba(26, 30, 79, 0.9) !important;
   background-color: rgb(18, 85, 230);
-  /* border-color: aqua; */
 }
 
 .resume-btn {
@@ -193,14 +182,6 @@
 }
 
 .home-img {
-  /* background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
-      linear-gradient(
-        to top,
-        rgba(255, 255, 255, 0.4) 0%,
-        rgba(0, 0, 0, 0.25) 200%
-      );
-    background-blend-mode: multiply;
-    background-color: rgba(136, 141, 141, 0.2); */
   border-radius: 50%;
   height: auto;
   animation: movedown 2s linear forwards;
@@ -222,24 +203,12 @@
   transform: scale(1.1);
   border: 2px solid #fff;
   border-radius: 10px;
-  /* background-color: rgba(85, 100, 226, 0.5); */
   transition: 0.5s;
 }
 .proimg {
   width: 300px;
   height: 200px;
   align-items: center;
-}
-.proicon {
-  /* animation: shake 2s; */
-
-  /* background: rgb(105, 98, 98, 0.5); */
-  /* background: linear-gradient(
-    180deg,
-    rgba(105, 98, 98, 0.6) 19%,
-    rgba(69, 85, 88, 0.7) 53%
-  );
-  border-radius: 50%; */
 }
 .prodes p {
   background: rgb(105, 98, 98, 0.5);
@@ -260,8 +229,6 @@
   height: 200px;
   padding-top: 60px !important;
   padding: 20px;
-  /* margin-left: 43px; */
-
   background: rgb(105, 98, 98);
   background: linear-gradient(
     180deg,
@@ -275,9 +242,22 @@
 .prodes:hover {
   opacity: 1;
 }
+
+.pro-body {
+  height: 120px;
+}
+.pro-body p {
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  color: rgb(189, 189, 189);
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
 .pro-icon {
-  /* justify-content: center;
-  text-align: center; */
   padding: 10px 16px;
   margin: 10px;
   border-radius: 50px;
@@ -286,7 +266,12 @@
   cursor: pointer;
   color: white;
 }
-
+.pro-icon:hover {
+  transform: scale(1.2);
+  border: 2px solid #b923e1;
+  border-radius: 50px;
+  transition: 0.5s;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -305,7 +290,7 @@ html {
 }
 h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700; /* Bold for headings */
+  font-weight: 700;
 }
 .Certificate {
   padding: 20px;
@@ -315,15 +300,15 @@ h1 {
   position: relative;
   padding: 20px;
   max-width: 1200px;
-  margin-top: -30px;
-  margin: 100px auto;
+  /* margin-top: 30px; */
+  margin: 50px auto;
   animation: movedown 1s linear forwards;
   opacity: 0;
 }
 @keyframes movedown {
   0% {
     opacity: 1;
-    transform: translateY(-30px);
+    transform: translateY(-50px);
   }
   100% {
     opacity: 1;
@@ -338,6 +323,9 @@ h1 {
 }
 .education-details .container:nth-child(3) {
   animation-delay: 2s;
+}
+.education-details .container:nth-child(4) {
+  animation-delay: 3s;
 }
 .education-details .container {
   position: relative;
@@ -385,13 +373,6 @@ h1 {
   align-items: center;
 }
 
-/* p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300; 
-  line-height: 1.6;
-} 
-*/
-
 @media only screen and (max-width: 500px) {
   .custom-offcanvas-size {
     width: 230px !important;
@@ -412,15 +393,23 @@ h1 {
     margin-top: 15px;
     font-size: xx-small;
   }
+  .pro-body h6 {
+    font-size: small;
+    /* color: #ad23d3; */
+  }
+  .pro-body {
+    height: 90px;
+  }
   .pro-icon {
-    /* justify-content: center;
-  text-align: center; */
     padding: 4px 10px;
     margin: 3px;
     border-radius: 50px;
     border: 2px solid wheat;
     /* background: linear-gradient(267deg, #da7c25 0.26%, #b923e1 92.06%); */
     font-size: xx-small;
+  }
+  .education-details {
+    font-size: small;
   }
 
   .con-email {

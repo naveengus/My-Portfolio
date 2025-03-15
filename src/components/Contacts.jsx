@@ -35,7 +35,10 @@ function Contacts() {
     <div>
       <div id="Contacts" className="container   mb-3">
         <div className="row  con-box ">
-          <h1 className="text-center mt-2 mb-4  p-3 ">Contact Me</h1>
+          <h1 className="text-center mt-2 mb-4  p-3 ">
+            <FaPhoneSquareAlt />
+            Contact Me
+          </h1>
           <div className=" col-12 col-md-6  ">
             <Form onSubmit={onSubmit} className="con-form">
               <Form.Group className="mb-3">
