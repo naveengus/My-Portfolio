@@ -11,6 +11,7 @@ import Education from "./Education";
 import Certificates from "./Certificate";
 import Contacts from "./Contacts";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import myResume from "../assets/Naveen-G-ResumeF.pdf";
 function Home() {
   return (
     <>
@@ -53,7 +54,17 @@ function Home() {
                   <MdOutgoingMail className="icon" size={30} />
                 </a> */}
                 <br />
-                <button className="resume-btn mt-3  me-3 ms-2">Resume</button>
+                {/* <button className="resume-btn mt-3  me-3 ms-2">Resume</button> */}
+                <button className="resume-btn mt-3 me-3 ms-2">
+                  <a
+                    href={myResume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-white"
+                  >
+                    Resume
+                  </a>
+                </button>
                 <AnchorLink href="#Contacts">
                   <button className="hire-btn mt-3 me-3">Hire ME</button>
                 </AnchorLink>

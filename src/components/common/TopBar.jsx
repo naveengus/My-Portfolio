@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import mypic1 from "../../assets/mypic1.png";
+import profile from "../../assets/profile2.png";
 import { IoHomeOutline } from "react-icons/io5";
 import { PiWhatsappLogoLight } from "react-icons/pi";
 import { FaWhatsapp } from "react-icons/fa";
@@ -96,7 +97,8 @@ function OffcanvasExample() {
                 <Offcanvas.Title id="offcanvasNavbarLabel">
                   <img
                     className="sideprofile img-fluid ms-md-2"
-                    src={mypic1}
+                    // src={mypic1}
+                    src={profile}
                     alt="Naveen's Picture"
                   />
                   Naveen.G
