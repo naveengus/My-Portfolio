@@ -2,6 +2,7 @@ import React from "react";
 import project1 from "../assets/project1.png";
 import pro2 from "../assets/project2 (1).png";
 import pro3 from "../assets/project3.png";
+import AngularProject from "../assets/project4.png";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaChrome } from "react-icons/fa";
 import {
@@ -30,9 +31,10 @@ function Projects() {
     },
     {
       id: 3,
-      img: pro2,
-      title: "Angular Forms Crud",
-      description: "This is my project 3",
+      img: AngularProject,
+      title: "Angular Forms (Crud)",
+      description:
+        "This project form is built using Angular and implements full CRUD operations. Users can dynamically create, view, and delete projects using reactive forms.",
       link: "https://github.com/naveengus/Angular-first.git",
       visit: "https://angular-forms",
     },
