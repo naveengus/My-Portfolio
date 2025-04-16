@@ -140,19 +140,14 @@ function OffcanvasExample() {
                     <MdOutlineDeveloperMode className="officon" /> Projects
                   </AnchorLink>
 
-                  {/* <AnchorLink
+                  <AnchorLink
                     offset={50}
-                    href="/Experience"
+                    href="#Experience"
                     className="off-link"
                     onClick={handleClose}
                   >
-                    <Link
-                      to="/Experience"
-                      className=" text-decoration-none text-white"
-                    >
-                      <LuBicepsFlexed className="officon" /> Experience
-                    </Link>
-                  </AnchorLink> */}
+                    <LuBicepsFlexed className="officon" /> Experience
+                  </AnchorLink>
 
                   <AnchorLink
                     offset={50}

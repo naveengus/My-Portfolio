@@ -12,6 +12,7 @@ import Certificates from "./Certificate";
 import Contacts from "./Contacts";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import myResume from "../assets/Naveen-G-ResumeF.pdf";
+import Experience from "./Experience";
 function Home() {
   return (
     <>
@@ -85,6 +86,7 @@ function Home() {
       <About />
       <Projects />
       <Education />
+      <Experience />
       <Certificates />
       <Contacts />
     </>
