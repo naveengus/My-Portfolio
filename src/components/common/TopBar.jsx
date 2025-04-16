@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -21,7 +22,10 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function OffcanvasExample() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -86,8 +90,11 @@ function OffcanvasExample() {
             <Navbar.Toggle
               aria-controls="offcanvasNavbar"
               className="custom-navbar-toggler "
+              onClick={handleShow}
             />
             <Navbar.Offcanvas
+              show={show}
+              onHide={handleClose}
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
               placement="end"
@@ -106,19 +113,131 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-2 pe-3 offNav">
-                  <Nav.Link href="/Home">
+                  <AnchorLink
+                    offset={50}
+                    href="#Home"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
                     <IoHomeOutline className="officon" /> Home
-                  </Nav.Link>
-                  <Nav.Link href="/About">
+                  </AnchorLink>
+
+                  <AnchorLink
+                    offset={50}
+                    href="#About"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
                     <MdOutlineMedicalInformation className="officon" /> About
-                  </Nav.Link>
-                  <Nav.Link href="/Projects">
+                  </AnchorLink>
+
+                  <AnchorLink
+                    offset={50}
+                    href="#Projects"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
                     <MdOutlineDeveloperMode className="officon" /> Projects
-                  </Nav.Link>
-                  <Nav.Link href="/Experience">
+                  </AnchorLink>
+
+                  {/* <AnchorLink
+                    offset={50}
+                    href="/Experience"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <Link
+                      to="/Experience"
+                      className=" text-decoration-none text-white"
+                    >
+                      <LuBicepsFlexed className="officon" /> Experience
+                    </Link>
+                  </AnchorLink> */}
+
+                  <AnchorLink
+                    offset={50}
+                    href="#Certificates"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <GrCertificate className="officon" /> Certificates
+                  </AnchorLink>
+
+                  <AnchorLink
+                    offset={50}
+                    href="#Education"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <LuBookOpenText className="officon" /> Education
+                  </AnchorLink>
+
+                  <AnchorLink
+                    offset={50}
+                    href="#Contacts"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <FaPhoneSquareAlt className="officon" /> Contacts
+                  </AnchorLink>
+
+                  {/* <Link to="/Home" className="off-link" onClick={handleClose}>
+                    <IoHomeOutline className="officon" /> Home
+                  </Link> */}
+
+                  {/* <Link to="/About" className="off-link" onClick={handleClose}>
+                    <MdOutlineMedicalInformation className="officon" /> About
+                  </Link> */}
+                  {/* <Link
+                    to="/Projects"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <MdOutlineDeveloperMode className="officon" /> Projects
+                  </Link> */}
+                  {/* <Link
+                    to="/Experience"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
                     <LuBicepsFlexed className="officon" /> Experience
-                  </Nav.Link>
-                  <Nav.Link href="/Certificates">
+                  </Link> */}
+                  {/* <Link
+                    to="/Certificates"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <GrCertificate className="officon" /> Certificates
+                  </Link> */}
+                  {/* <Link
+                    to="/Education"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <LuBookOpenText className="officon" /> Education
+                  </Link> */}
+                  {/* <Link
+                    to="/Contacts"
+                    className="off-link"
+                    onClick={handleClose}
+                  >
+                    <FaPhoneSquareAlt className="officon" /> Contacts
+                  </Link> */}
+
+                  {/* <Nav.Link href="/Home">
+                    <IoHomeOutline className="officon" /> Home
+                  </Nav.Link> */}
+                  {/* <Nav.Link href="/About">
+                    <MdOutlineMedicalInformation className="officon" /> About
+                  </Nav.Link> */}
+
+                  {/* <Nav.Link href="/Projects">
+                    <MdOutlineDeveloperMode className="officon" /> Projects
+                  </Nav.Link> */}
+                  {/* <Nav.Link href="/Experience">
+                    <LuBicepsFlexed className="officon" /> Experience
+                  </Nav.Link> */}
+                  {/* <Nav.Link href="/Certificates">
                     <GrCertificate className="officon" /> Certificates
                   </Nav.Link>
                   <Nav.Link href="/Education">
@@ -126,7 +245,7 @@ function OffcanvasExample() {
                   </Nav.Link>
                   <Nav.Link href="/Contacts">
                     <FaPhoneSquareAlt className="officon" /> Contacts
-                  </Nav.Link>
+                  </Nav.Link> */}
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

@@ -4,7 +4,7 @@ import { LuBicepsFlexed, LuBookOpenText } from "react-icons/lu";
 function Experience() {
   return (
     <div>
-      <div className="container vh-100  " id="About">
+      <div className="container vh-100  " id="Experience">
         <div className="col   align-items-center">
           <h1 className="text-center  mt-2 pt-3 ">
             <LuBicepsFlexed className="" /> Experience

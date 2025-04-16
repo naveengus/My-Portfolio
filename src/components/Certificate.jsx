@@ -32,7 +32,7 @@ function Certificate() {
   };
   return (
     <div>
-      <div id="About" className="container vh-md-100  mb-3">
+      <div id="Certificates" className="container vh-md-100  mb-3">
         <div className="row   align-items-center">
           <h1 className="text-center mt-3  p-3 ">
             <GrCertificate /> Certificates

@@ -114,14 +114,16 @@
   margin-right: 15px;
   background-color: rgb(211, 208, 208, 0.7);
 }
-.offNav .nav-link {
+.offNav .off-link {
   padding: 20px;
   border-radius: 15px;
+  text-decoration: none;
+  color: white;
 }
 .officon {
   margin-right: 15px;
 }
-.offNav .nav-link:hover {
+.offNav .off-link:hover {
   background-color: rgb(135, 136, 138, 0.1);
 }
 .intro-box {
