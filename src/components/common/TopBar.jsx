@@ -10,6 +10,7 @@ import profile from "../../assets/profile2.png";
 import { IoHomeOutline } from "react-icons/io5";
 import { PiWhatsappLogoLight } from "react-icons/pi";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdOutgoingMail } from "react-icons/md";
 
 import {
   MdOutlineMedicalInformation,
@@ -68,15 +69,13 @@ function OffcanvasExample() {
         {!isMobile ? (
           <a
             className="contactme text-decoration-none"
-            href="https://wa.me/919524469130"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:naveen.g13579@gmail.com"
           >
-            Contact Me <FaWhatsapp className="whatsapp" />
+            Email Me <MdOutgoingMail className="whatsapp" />
           </a>
         ) : (
           <>
-            <a
+            {/* <a
               className="contactmemd text-decoration-none"
               href="https://wa.me/919524469130"
               target="_blank"
@@ -84,6 +83,12 @@ function OffcanvasExample() {
             >
               Contact Me
               <FaWhatsapp className="whatsappmd" />
+            </a> */}
+            <a
+              className="contactmemd text-decoration-none"
+              href="mailto:naveen.g13579@gmail.com"
+            >
+              Email Me <MdOutgoingMail className="whatsappmd" />
             </a>
             {/* <button className="contactmemd">Contact Me</button> */}
 

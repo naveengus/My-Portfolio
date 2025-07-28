@@ -53,14 +53,14 @@
   }
 }
 .whatsapp {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   border-radius: 50px;
   font-size: 40px;
   padding: 5px;
   color: rgb(253, 248, 248);
 }
 .whatsappmd {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   border-radius: 50px;
   font-size: 20px;
   padding: 3px;
